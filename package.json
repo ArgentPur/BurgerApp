@@ -1,0 +1,26 @@
+{
+  "name": "burgerapp",
+  "version": "1.0.0",
+  "description": "BurgerApp",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArgentPur/BurgerApp.git"
+  },
+  "keywords": [
+    "yum"
+  ],
+  "author": "ArgentPur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArgentPur/BurgerApp/issues"
+  },
+  "homepage": "https://github.com/ArgentPur/BurgerApp#readme",
+  "dependencies": {
+    "express-handlebars": "^5.2.0",
+    "mysql": "^2.18.1"
+  }
+}
