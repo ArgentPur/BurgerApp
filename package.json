@@ -21,6 +21,7 @@
   "homepage": "https://github.com/ArgentPur/BurgerApp#readme",
   "dependencies": {
     "express-handlebars": "^5.2.0",
+    "handlebars": "^4.7.6",
     "mysql": "^2.18.1"
   }
 }
