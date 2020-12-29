@@ -7,6 +7,9 @@ var orm = {
         connection.query(queryStr, function(err, result) {
             if(err){throw err;}cb(result)
         });
+    },
+    create: function (table, cols, vals, cb) {
+        var qryString = "INSERT INTO " + table;
     }
 }
 
