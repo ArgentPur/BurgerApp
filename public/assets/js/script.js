@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  $(".devour-form").on("submit", function(event) {
     event.preventDefault();
 
     $.ajax({
@@ -7,4 +8,5 @@ $(document).ready(function() {
     }).then(function(data) {
         location.reload();
     });
+  });  
 })
