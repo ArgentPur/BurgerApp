@@ -3,6 +3,8 @@ $(document).ready(function() {
 
     $.ajax({
         method: "PUT",
-        url: "/burgers/"
-    })
+        url: "/burgers/" + burger_id
+    }).then(function(data) {
+        location.reload();
+    });
 })
