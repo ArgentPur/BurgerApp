@@ -1,11 +1,13 @@
 <div class= "container">
     <div class= "row">
         <div class= "col-lg-12 text-center">
-            <img src= "public\assets\burger.png">
+            <img src= "public\assets\burger.png" alt="Burger">
             <h1>Eat-the-Burger</h1>
     <div>
+        <button type="button" class="btn btn-primary">List new burger.</button>
         {{#each burgers}},
         {{#unless devoured}},
+        <button type="button" class="btn btn-warning">Devour new burger.</button>
     </div>
 </div>>
 
