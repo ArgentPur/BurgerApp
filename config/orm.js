@@ -4,11 +4,18 @@ var connection = require("./connection.js");
 
 
 function printQM(num) {
-
+    var arr= [];
+    for(i= 0; i < num; i++) {
+        arr.push("?");
+    }
+    return arr.toString();
 };
 
 function objSql(ob) {
-
+    var arr= [];
+    for(var key in ob) {
+        arr.push(key + "=" + ob[key]);
+    }
 };
 
 var orm = {
