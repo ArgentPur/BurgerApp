@@ -2,7 +2,7 @@
   "name": "burgerapp",
   "version": "1.0.0",
   "description": "BurgerApp",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "test"
   },
