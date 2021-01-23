@@ -4,6 +4,7 @@
   "description": "BurgerApp",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "test"
   },
   "repository": {
