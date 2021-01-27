@@ -11,7 +11,7 @@
             <div>
            <button type="button" class="btn btn-primary">List new burger.</button>
             <form>
-              <textarea></textarea>
+              <textarea>New Undevoured Burgers</textarea>
             </form>
                {{#each burgers}},
                {{#unless devoured}},
@@ -19,6 +19,10 @@
            </div>
 
            <div class= "col-md-6 text-center">
+            
+            <form>
+              <textarea>Devoured Burgers</textarea>
+            </form>
 
              <ul>
                {{#each burgers}},

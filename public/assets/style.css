@@ -3,3 +3,7 @@ body {
     width:auto;
     background-color: aqua;
 }
+
+.container {
+    background-color: blue;
+}
