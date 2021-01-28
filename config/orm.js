@@ -35,8 +35,9 @@ var orm = {
         qryString += printQM(vals.length);
         qryString += ") ";
         console.log(qryString);
+        // "INSERT INTO " + TABLE + "(burger_name) VALUES (" + vals + ")"
 
-        connection.query(qryString, vals, cols, function(result) {
+        connection.query("INSERT INTO " + TABLE + "(burger_name) VALUES (" + vals + ")", vals, cols, function(result) {
             cb(result);
         });
     },

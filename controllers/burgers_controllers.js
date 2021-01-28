@@ -5,11 +5,12 @@ const burger = require("../models/burger.js");
 
 router.get("/", function(req, res) {
     burger.all(function(data) {
+
         let hdbsOb = {
-            burgers_db: data
+            burgers_db: JSON.parse(JSON.stringify(data))
         };
         console.log(hdbsOb);
-        res.render("index", hdbsOb);
+        res.render("index", { burgers_db: JSON.parse(JSON.stringify(data)) });
     });
 });
 
@@ -25,7 +26,7 @@ router.post("/api/burgers", function(req, res) {
     });
 });
 
-router.put("api/burgers/:id", function(req, res) {
+router.put("/api/burgers/:id", function(req, res) {
     var condition = `id = ${req.params.id}`;
     console.log("condition", condition);
     burger.update({
