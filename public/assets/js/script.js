@@ -10,3 +10,10 @@ $(document).ready(function() {
     });
   });  
 })
+
+$(".saveBtn").on("click", function() {
+  let event= $(this).siblings(".textValue").val();
+  console.table(event); 
+  localStorage.setItem(event);
+  JSON.stringify(event);
+});
