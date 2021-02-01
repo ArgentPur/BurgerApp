@@ -5,21 +5,43 @@
       <h1>Eat-the-Burger</h1>
     </div>
 
-    <div class="col-md-6 text-center">
-      <form class= "devour-form">
+    <div class="card col-md-6 text-center" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Add a new Burger</h5>
+    <h6 class="card-subtitle mb-2 text-muted">no mayo*</h6>
+     <form class= "devour-form">
       <input type="text" class="newBurg">
-      <button type="submit" class="btn btn-primary">add new burger.</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
       </form>
-      <form>
-        <h1>New Undevoured Burgers</h1>
-      </form>
-      {{#each this.burger_db}}
-      {{#unless this.devoured}}
-        <p>{{this.id}}. {{this.burger_name}}</p>
-      {{/unless}}
-      {{/each}}
+    <a href="https://www.foodandwine.com/comfort-food/burgers/burger-recipes" class="card-link">Burger Ideas</a>
+    <a href="#" class="card-link"></a>
+  </div>
+</div>
+
+    <div class="card col-md-6 text-center" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">New Undevoured Burger</h5>
+     <form class= "devour-form">
+      {{!-- <input type="text" class="newBurg"> --}}
+       <p>{{this.id}}. {{this.burger_name}}</p>
       <button type="button" class="btn btn-warning">Devour new burger.</button>
+      </form>
+    <a href="#" class="card-link"></a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+    <div class="col-md-6 text-center">
+      <ul>
+        {{#each this.burger_db}}
+        {{#if this.devoured}}
+          <p>{{this.id}}. {{this.burger_name}}</p>
+        {{/if}}
+        {{/each}}
+      </ul>
     </div>
+  </div>
+</div>
     <div class="col-md-6 text-center">
       <form>
         <h1>Devoured Burgers</h1>

@@ -1,9 +1,14 @@
 body {
-    height:auto;
-    width:auto;
+    height:100%;
+    width:100%;
     background-color: aqua;
+    justify-content: center;
 }
 
 .container {
     background-color: blue;
+}
+
+.header {
+    background-color: bisque;
 }
