@@ -11,10 +11,12 @@ const burger = {
             cb(res);
         });
     },
-    update: function(objColsVals, condition, cb) {
-        orm.update("burgers", objColsVals, condition, function(res) {
-            cb(res);
-        });
+    update: function(condition, cb) {
+       var condition = "id=" + id;
+       orm.update("burgers", {
+           devoured: true
+       }, condition, cb);
+        
     }
 };
 
