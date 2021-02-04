@@ -1,4 +1,7 @@
 const express = require("express");
+const burger = require("../models/burger.js")
+const orm = require("../config/orm.js")
+const connection = require("../config/connection.js")
 const router = express.Router();
 
 const burger = require("../models/burger.js");
@@ -14,7 +17,7 @@ router.get("/", function(req, res) {
     });
 });
 
-router.post("/api/burgers", function(req, res) {
+router.post("/burgers/create", function(req, res) {
     console.log(req.body);
     burger.create([
         "burger_name"
