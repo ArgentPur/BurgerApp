@@ -1,7 +1,7 @@
 const express = require("express");
-const burger = require("../models/burger.js")
-const orm = require("../config/orm.js")
-const connection = require("../config/connection.js")
+// const burger = require("../models/burger.js");
+// const orm = require("../config/orm.js");
+// const connection = require("../config/connection.js");
 const router = express.Router();
 
 const burger = require("../models/burger.js");
